@@ -11,7 +11,8 @@
         <style type="text/css">
             html, body {
             font-family: sans-serif;
-            }
+            background-color:cornsilk;
+          }
           .centre {
             text-align: center;
           }
@@ -19,10 +20,11 @@
             border: dotted;
             border-width: thick;
           }
-          .header_top, {
+          .header_top {
             font-size: 30px;
-            font-style: oblique;
+            font-style: cursive;
             font-weight: bold;
+            color: chocolate;
           }
           .question {
             font-weight: bold;
@@ -31,101 +33,109 @@
                 }
           #explanation {
             text-align: justify;
-            font-family: fantasy;
-            font-size: 20;
+            font-family: serif;
+            font-size: 20px;
+          }
+          #input_size {
+            width: 100px;
+            height: 60px;
+            text-align: center;
+            font-size: 20px;
+            font-family: serif;
+            font-weight: bold;
           }
 
         </style>
     </head>
 
     <body>
-        <div class="centre"><h1 id="top_of_page" class="header_top">Year 11 Computing quick survey - banking industry</h1></div>
+        <div class="centre"><h1 id="top_of_page" class="header_top">Year 11 Computing Survey - Banking Industry</h1></div>
         <div id="explanation">
             Nowadays, more and more people are using banks in order to gain heaps of convenience such as saving, protecting, borrowing and investing their money. Thanks to this convenience, they can get access to a better and more comfortable life. However, also due to this convenience, they may go overboard, struggle to control their finance and then finally end up with bankruptcy. This issue has great impacts on many stakeholders related to banking such as the customers and the bank themselves, the bank investors and even the government. Therefore, it's essential for all stakeholders to participate in tackling this problem.
         </div>
 
         <p>
-            <a href="https://northcotehs.github.io/11COM-BuySell/">For more information, please read our page on this issue in the banking industry. After that, please go back to this page to do the survey</a>
+            <a href="https://northcotehs.github.io/11COM-BuySell/">For more information, please read our page on this issue in the banking industry. After that, please go back to this page to do the survey.</a>
         </p>
-        <p class="header_top">Tell us what you think about banking industry</p>
+        <div class="header_top">Tell us what you think about banking industry:</div>
 
-        <form>
+        <form action="http://httpbin.org/post" method="post" >
             <p>
                 <!-- Interval (Quantitative) data -->
                 <span class="question">Year level:</span>
-                <input type="number" name="year" min="7" max="12">
+                <input type="number" name="Year Level" min="7" max="12">
             </p>
             <p>
                 <!-- Nominal (Qualitative) data -->
                 <span class="question">Gender:</span>
-                <label><input type="radio" name="gender" value="female">Female</label>
-                <label><input type="radio" name="gender" value="male">Male</label>
-                <label><input type="radio" name="gender" value="other">Other</label>
+                <label><input type="radio" name="Gender" value="female">Female</label>
+                <label><input type="radio" name="Gender" value="male">Male</label>
+                <label><input type="radio" name="Gender" value="other">Other</label>
             </p>
 
             <p>
                 <!-- Ratio (Quantitative) data -->
                 <span class="question">How many people do you personally know that have a bank account?</span>
                 <br/>
-                <input type="number" name="know" min="0">
+                <input type="number" name="Number of people with bank account" min="0">
             </p>
 
             <p>
                 <!-- Nominal (Qualitative) data -->
                 <span class="question">Has your family borrowed money from a bank?</span>
                 <br/>
-                <label><input type="radio" name="consider" value="yes">Yes</label>
-                <label><input type="radio" name="consider" value="no">No</label>
+                <label><input type="radio" name="Family Borrowing Money" value="yes">Yes</label>
+              <label><input type="radio" name="Family Borrowing Money" value="no">No</label>
             </p>
             <p>
                 <!-- Ordinal (Qualitative) data -->
-                <span class="question">If it's possible, which one in below do you want to invest in? Tick all that apply </span>
+                <span class="question">If it's possible, which one in below do you want to invest in? Tick all that apply.</span>
                 <br/>
-                <label><input type="checkbox" name="interact" value="bitcoin">Bitcoin</label>
-                <label><input type="checkbox" name="interact" value="bank">Bank</label>
-                <label><input type="checkbox" name="interact" value="property">Property</label>
+                <label><input type="checkbox" name="Investment Choices" value="bitcoin">Bitcoin</label>
+                <label><input type="checkbox" name="Investment Choices" value="bank">Bank</label>
+                <label><input type="checkbox" name="Investment Choices" value="property">Property</label>
 
             </p>
             <p>
                 <!-- Ordinal (Qualitative) data -->
                 <span class="question">On a scale of 1 to 5, how much do you trust the banks?</span>
                 <br/>
-                <label><input type="radio" name="drake" value="0">1 (Very Untrustworth)</label>
-                <label><input type="radio" name="drake" value="0">2 (Unrustworthy)</label>
-                <label><input type="radio" name="drake" value="0">3 (Kind of Trustworthy)</label>
-               <label><input type="radio" name="drake" value="0">4 (Trustworthy)</label>
-                <label><input type="radio" name="drake" value="0">5 (Very Trustworthy)</label>
+                <label><input type="radio" name="Trusting Banks" value="0">1 (Very Untrustworth)</label>
+                <label><input type="radio" name="Trusting Banks" value="0">2 (Unrustworthy)</label>
+                <label><input type="radio" name="Trusting Banks" value="0">3 (Kind of Trustworthy)</label>
+                <label><input type="radio" name="Trusting Banks" value="0">4 (Trustworthy)</label>
+                <label><input type="radio" name="Trusting Banks" value="0">5 (Very Trustworthy)</label>
             </p>
             <p>
                 <!-- Nominal (Qualitative) data -->
                 <span class="question">Do you think government needs to regulate banks?</span>
                 <br/>
-                <label><input type="radio" name="vote" value="yes">Yes</label>
-                <label><input type="radio" name="vote" value="no">No</label>
+                <label><input type="radio" name="Goverment Regulation" value="yes">Yes</label>
+                <label><input type="radio" name="Goverment Regulation" value="no">No</label>
             </p>
 
             <p>
                 <!-- Nominal (Qualitative) data -->
                 <span class="question">Which of our solutions do you think is the best? </span>
                 <br/>
-                <label><input type="radio" name="solution" value="solution 1" >Solution 1-provide users unpaid employment</label>
+                <label><input type="radio" name="Solution" value="solution 1" >Solution 1- Provide users unpaid employment.</label>
                 <br />
-                <label><input type="radio" name="solution" value="solution 2">Solution 2- the bank can lower the interst rate</label>
+                <label><input type="radio" name="Solution" value="solution 2">Solution 2- The bank can lower the interst rate.</label>
                 <br/>
-                <label><input type="radio" name="solution" value="solution 3">Solution 3- government should implement laws</label>
+                <label><input type="radio" name="Solution" value="solution 3">Solution 3- Government should implement laws.</label>
                 <br/>
-                <label><input type="radio" name="solution" value="solution 4">Solution 4- banks should have a better customer service that will warn customers when they cross the line</label>
+                <label><input type="radio" name="Solution" value="solution 4">Solution 4- Banks should have a better customer service that will warn customers when they cross the line.</label>
 
             </p>
             <p>
                 <!-- Ratio (Quantitative) data -->
                 <span class="question">How do you think this should be solved?</span>
                 <br/>
-                <textarea name="Solution of user" rows="4" cols="50"></textarea>
+                <textarea name="Solution of User" rows="4" cols="50"></textarea>
             </p>
 
 
-            <input type="submit" value="Submit">
+            <input id="input_size" type="submit" value="Submit">
         </form>
 
         <!-- Uncomment to use external JavaScript
