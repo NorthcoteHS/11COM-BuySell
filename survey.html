@@ -10,29 +10,45 @@
 
         <style type="text/css">
             html, body {
-                font-family: sans-serif;
+            font-family: sans-serif;
             }
-            .question {
-                font-weight: bold;
-                font-style: italic;
-                font-size: 30px;
-            }
+          .centre {
+            text-align: center;
+          }
+          #top_of_page {
+            border: dotted;
+            border-width: thick;
+          }
+          .header_top, {
+            font-size: 30px;
+            font-style: oblique;
+            font-weight: bold;
+          }
+          .question {
+            font-weight: bold;
+            font-style: italic;
+            font-size: 20px;
+                }
+          #explanation {
+            text-align: justify;
+            font-family: fantasy;
+            font-size: 20;
+          }
 
         </style>
     </head>
 
     <body>
-        <h1>Year 11 Computing quick survey - banking industry</h1>
-        <p>
+        <div class="centre"><h1 id="top_of_page" class="header_top">Year 11 Computing quick survey - banking industry</h1></div>
+        <div id="explanation">
             Nowadays, more and more people are using banks in order to gain heaps of convenience such as saving, protecting, borrowing and investing their money. Thanks to this convenience, they can get access to a better and more comfortable life. However, also due to this convenience, they may go overboard, struggle to control their finance and then finally end up with bankruptcy. This issue has great impacts on many stakeholders related to banking such as the customers and the bank themselves, the bank investors and even the government. Therefore, it's essential for all stakeholders to participate in tackling this problem.
-        </p>
+        </div>
 
         <p>
             <a href="https://northcotehs.github.io/11COM-BuySell/">For more information, please read our page on this issue in the banking industry. After that, please go back to this page to do the survey</a>
         </p>
-        <p>Tell us what you think about banking industry</p>
+        <p class="header_top">Tell us what you think about banking industry</p>
 
-        <h2>Survey</h2>
         <form>
             <p>
                 <!-- Interval (Quantitative) data -->
