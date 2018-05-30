@@ -3,7 +3,9 @@ Name                                      Type
   Gender                                    VARCHAR (6)
   Number_of_people_with_bank_account        SMALLINT
   Family_Borrowing_Money                    VARCHAR (3)
-  Investment_Choices                        VARCHAR (8)
+  Investment_Bank                           VARCHAR (2)
+  Investment_Bitcoin                        VARCHAR (2)
+  Investment_Property                       VARCHAR (2)
   Trusting_Banks                            VARCHAR (30)
   Governement_Regulation                    VARCHAR (3)
   Solution                                  VARCHAR (120)
