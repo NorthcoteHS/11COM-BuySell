@@ -1,10 +1,12 @@
 Name                                      Type
   Year_Level                                SMALLINT
-  Gender                                    VARCHAR
+  Gender                                    VARCHAR (6)
   Number_of_people_with_bank_account        SMALLINT
-  Family_Borrowing_Money                    VARCHAR
-  Investment_Choices                        VARCHAR
-  Trusting_Banks                            SMALLINT
-  Governement_Regulation                    VARCHAR
-  Solution                                  VARCHAR
-  Solution_Of_User                          VARCHAR (100)
+  Family_Borrowing_Money                    VARCHAR (3)
+  Investment_Bank                           VARCHAR (2)
+  Investment_Bitcoin                        VARCHAR (2)
+  Investment_Property                       VARCHAR (2)
+  Trusting_Banks                            VARCHAR (30)
+  Governement_Regulation                    VARCHAR (3)
+  Solution                                  VARCHAR (120)
+  Solution_Of_User                          VARCHAR (200)
